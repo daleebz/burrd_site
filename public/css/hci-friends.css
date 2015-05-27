@@ -1,0 +1,27 @@
+/* applies to anything of class "example-class-selector" */
+.example-class-selector {
+	margin-top: 2em;
+}
+
+/* applies to any <p> descendants of an element of class "example-class-selector" */
+.example-class-selector p {
+	/* Colors are in hexadecimal: http://www.colorpicker.com/ */	
+	color: #CC00AA;
+}
+
+.vibn {
+
+	background-color: #5cb85c
+}
+
+.bad {
+
+	background-color: #d9534f
+}
+
+.ok {
+
+	background-color: #f0ad4e
+}
+
+

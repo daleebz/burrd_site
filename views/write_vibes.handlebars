@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>InternVibes</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="/"> Home </a>
+                <a class="navbar-brand topnav" href="/Help">About</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li>
+                        <a href="/FAQ">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="/suggestion">Suggestions</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Header -->
+    
+    <!-- /.intro-header -->
+
+    <!-- Page Content -->
+
+    <div class="container">
+        <form id="addFriendForm" role="form" method="get" action="/add">
+        <h3>>&nbsp;</h3>
+        <h1>Write your vibe</h1>
+        <hr class="section-heading-spacer">
+        
+        <h3>Company</h3>
+        <select class="selectpicker" name="company">
+            <option>Google</option>
+            <option>Yahoo</option>
+            <option>Teradata</option>
+            <option>Qualcomm</option>
+            <option>Apple</option>
+        </select>
+
+         <p>&nbsp;</p>
+        <div class="form-group">
+          <label for="project">Project:</label>
+          <textarea type="text" class="form-control" id="project" rows="3" placeholder="Describe the project that you worked on during your internship." name="project"></textarea> 
+        </div>
+        <div class="form-group">
+          <label for="management">Management:</label>
+          <textarea type="text" class="form-control" id="management" rows="3" placeholder="Questions to think about: What was the chain of command? Was the internship very structured? Was your manager also your mentor?" name="management"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="team">Team:</label>
+          <textarea type="text" class="form-control" id="management" rows="3" placeholder="How was the team you worked on structured? Did you work in a lab all day mostly? With other interns? Only with other full time employees?" name="team"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="work environment">Work Environment:</label>
+          <textarea type="text" class="form-control" id="workenvironment" rows="3" placeholder="Tell us about the overall environment where you worked. City? Cubicles? Open Desks? Cafeterias? Did you dread going to work or did you love it?" name="workenvironment"></textarea>
+        </div>
+        <div>
+        <div>
+        <h3>How were the vibes?</h3>
+        <a href="/FAQ">What is a vibe?</a>
+        </div>
+        <select class="selectpicker" name="quality">
+            <option>ok</option>
+            <option>vibn</option>
+            <option>bad</option>
+        </select>
+        
+        <h6>&nbsp;</h6>
+        </div>
+        <input type="submit" id="submitBtn" class="btn btn-primary btn-lg" value="Add Vibe!">
+    <a class="btn btn-default btn-lg" href="/" role="button">Cancel</a></input>
+        </form>
+
+        <h6>&nbsp;</h6>
+        
+      
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Submitted!</h4>
+      </div>
+      <div class="modal-body">
+        Your Vibe has been submitted and can be found under the company you selected.
+      </div>
+      <div class="modal-footer">
+        
+        <a class="btn btn-primary btn-lg" href="/" role="button">Home</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <h6>&nbsp;</h6>
+
+    </div>
+
+
+ 
+    <script src="js/jquery.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <script>
+    function myfunction(){
+        var first = $('#workenvironment').val();
+        console.log(first);
+
+    }
+    </script>
+
+</body>
+
+</html>
