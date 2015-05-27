@@ -9,13 +9,10 @@ var path = require('path');
 var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
-var find_vibes = require('./routes/find_vibes');
-var write_vibes = require('./routes/write_vibes');
 var FAQ = require('./routes/FAQ');
 var suggestion = require('./routes/suggestion');
 var help = require('./routes/help');
-var company = require('./routes/company');
-var add = require('./routes/add');
+
 
 var project = require('./routes/project');
 // Example route
@@ -47,14 +44,8 @@ if ('development' == app.get('env')) {
 // Add routes here
 
 app.get('/', index.view);
-app.get('/find_vibes', find_vibes.view );
-app.get('/write_vibes', write_vibes.view);
 app.get('/suggestion', suggestion.view);
 app.get('/help', help.view);
-app.get('/company', company.view);
-app.get('/add', add.addFriend);
-app.get('/company/:id', company.compid);
-
 
 
 app.get('/FAQ', FAQ.view);
