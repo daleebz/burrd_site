@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Meego Technology | Laptop Theft Deterrent">
+    <meta name="author" content="Jesse Qin">
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
+    <meta name=viewport content="width=device-width, initial-scale=.8, minimum-scale = .8, user-scalable=yes">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <script src="./js/jquery-1.11.2.min.js"></script>
+    <script src="./js/velocity.min.js"></script>
+    <script src="./js/logo.js"></script>
+    <script src="./js/main.js"></script>
+    <title>Meego Technology</title>
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="meegologo h-link">
+            <a class="hidden-link" href="index.html"></a>
+            <svg class="svg-go" width="100%" viewBox="0 0 400 400">
+                <path class="go-1" d="M 167 144 a-45,-45 0 0,1 -90,0 a-45,-45 0 0,1 90,0"  stroke="#fafafa" stroke-width="8" stroke-linecap="round" fill="none"></path>
+                <path class="go-2" d="M 167 144 l 0 116 a-45,-45 0 0,1 -90,0 a-45,-45 0 0,1 45,-45"  stroke="#fafafa" stroke-width="8" stroke-linecap="round" fill="none"></path>
+                <path class="go-3" d="M 167 144 m -44 71 l 217 0"  stroke="#fafafa" stroke-width="8" stroke-linecap="round" fill="none"></path>
+                <path class="go-4" d="M 167 144 m -44 71 m 217 0 l -24 -22"  stroke="#fafafa" stroke-width="8" stroke-linecap="round" fill="none"></path>
+                <path class="go-5" d="M 167 144 m -44 71 m 217 0 l -24 22"  stroke="#fafafa" stroke-width="8" stroke-linecap="round" fill="none"></path>
+                <path class="tether-1" d="M 178 144 l 60 0"  stroke="#C70705" stroke-width="4" stroke-linecap="round" fill="none"></path>
+            </svg>
+            <svg class="svg-o" width="100%" viewBox="-113 0 400 400">
+                <path class="o-1" d="M 167 144 a-45,-45 0 0,1 -90,0 a-45,-45 0 0,1 90,0"  stroke="#fafafa" stroke-width="8" stroke-linecap="round" fill="none"></path>
+            </svg>
+            <svg class="svg-o-2" width="100%" viewBox="-149 -83 280 280">
+                <path class="o-2" d="M26 14h-2v-6c0-4.418-3.582-8-8-8s-8 3.582-8 8v6h-2c-1.1 0-2 0.9-2 2v14c0 1.1 0.9 2 2 2h20c1.1 0 2-0.9 2-2v-14c0-1.1-0.9-2-2-2zM16 26c-1.105 0-2-0.895-2-2s0.895-2 2-2 2 0.895 2 2-0.895 2-2 2zM20 14h-8v-6c0-2.206 1.794-4 4-4s4 1.794 4 4v6z" fill="#C70705"></path>
+            </svg>
+        </div>
+        <div class="nav-buttons">
+            <div class="nav-button h-link">
+                <a class="hidden-link" href="team.html"></a>
+                THE TEAM
+            </div>
+            <div class="nav-button h-link">
+                <a class="hidden-link" href="contact.html"></a>
+                CONTACT US
+            </div>
+            <div class="nav-button sign-up-button">SIGN UP</div>
+        </div>
+        <div class="burger-icon">
+            <div class="burger-icon-inner">
+                <div class="bar1 bar"></div>
+                <div class="bar2 bar">
+                    <div class="m-nav">
+                        <div class="m-nav-button h-link">
+                            <a class="hidden-link" href="team.html"></a>
+                            THE TEAM
+                        </div>
+                        <div class="m-nav-button h-link">
+                            <a class="hidden-link" href="contact.html"></a>
+                            CONTACT US
+                        </div>
+                        <div class="m-nav-button sign-up-mobile">SIGN UP</div>
+                    </div>
+                </div>
+                <div class="bar3 bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="subscribe">
+        <div class="subscribe-box">
+            <div class="subscribe-text">Sign up to receive emails with the latest Meego updates!</div> 
+
+            <form class="subscribe-form" action="handle_subscribe.php" method="post">
+                <div class="subscribe-input-wrapper">
+                    <label for="subfname">First Name *</label>
+                    <input class="subscribe-input" type="text" name="subfname" required>
+                    <label for="sublname">Last Name *</label>
+                    <input class="subscribe-input" type="text" name="sublname" required>
+                    <label for="email">Email *</label>
+                    <input class="subscribe-input" type="email" name="email" required>
+                    <div class="subscribe-button">Keep me posted!</div>
+                </div>
+                <input class="subscribe-submit" type="submit" name="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+
+    <div class="landing">
+        <div class="simple-security">
+            <div class="ss-text">The most simple security for your </div>
+            <div class="ss-mod"><span class="mod-text">laptop.</span>  <div class="blinky"></div></div>
+        </div>
+
+        <div class="laptop">
+            <div class="laptop-camera"></div>
+            <div class="laptop-screen">
+                <div class="landing-slogan">&nbsp;Safe in Sound.</div>
+                <div class="landing-button-wrapper">
+                    <div class="landing-button" id="landing-button-1">WHAT IS MEEGO?</div>
+                    <div class="landing-button" id="landing-button-2">OUR KICKSTARTER.</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="section section-1">
+        <div class="section-wrap">
+            <div class="section-title fadein">About Meego</div>
+            <div class="s1-about fadein">Meego is a small, portable device with a mounting feature to allow for convenient immobilization of any personal belongings. When motion-triggered, it sets off an alarm and notifies your mobile device.</div>
+            <div class="s1-panel fadein">
+                <svg class="icon icon-book">
+                    <symbol id="icon-book" viewBox="0 -150 1224 1224">
+                        <title>book</title>
+                        <path class="path1" d="M424.363 399.488c-72.235-55.851-160.213-115.029-298.667-126.251l298.667 126.251zM424.363 527.488c-72.235-55.851-160.213-115.029-298.667-126.251l298.667 126.251zM296.32 573.909c-47.573-22.315-103.083-39.211-170.624-44.672l170.624 44.672zM556.971 399.488l298.667-126.251c-138.453 11.221-226.432 70.443-298.667 126.251zM556.971 527.488l298.667-126.251c-138.453 11.221-226.432 70.443-298.667 126.251zM855.637 529.237c-67.541 5.461-123.051 22.315-170.624 44.672l170.624-44.672zM940.971 15.488c-186.88 0-357.931 87.253-444.373 156.331h-11.819c-86.485-69.077-257.536-156.331-444.416-156.331h-40.363v810.667h40.363c138.069 0 291.115 53.163 359.168 104.491 20.224 15.317 38.699 31.317 54.955 47.616l34.176 31.36h4.011l34.176-31.36c16.256-16.299 34.731-32.299 54.955-47.616 68.053-51.328 221.099-104.491 359.168-104.491h40.363v-810.667h-40.363zM469.333 875.563c0-4.352-10.411-8.747-16.043-13.013-71.381-53.803-239.957-110.763-367.957-120.32v-639.659c170.667 13.056 309.888 95.957 370.389 156.245l11.563 12.672h2.048v604.075zM896 742.229c-128 9.557-296.576 66.517-367.957 120.32-5.632 4.267-16.043 8.704-16.043 13.013v-604.075h2.091l11.563-12.672c60.459-60.288 199.68-143.189 370.347-156.245v639.659z"></path>
+                    </symbol>
+                    <use xlink:href="#icon-book"></use></svg>
+                    <div class="title">For the Student</div>
+                    <div class="description">Use Meego in the library. Step away to grab a snack or use the bathroom without packing away all your valuables and losing your study spot.</div>
+                </div>
+
+                <div class="s1-panel fadein">
+                    <svg class="icon icon-briefcase">
+                        <symbol id="icon-briefcase" viewBox="0 0 1024 1024">
+                            <title>briefcase</title>
+                            <path class="path1" d="M426.667 85.333h170.667q53 0 90.5 37.5t37.5 90.5v42.667h128q53 0 90.5 37.5t37.5 90.5v426.667q0 53-37.5 90.5t-90.5 37.5h-682.667q-53 0-90.5-37.5t-37.5-90.5v-426.667q0-53 37.5-90.5t90.5-37.5h128v-42.667q0-53 37.5-90.5t90.5-37.5zM213.333 853.333v-512h-42.667q-17.667 0-30.167 12.5t-12.5 30.167v426.667q0 17.667 12.5 30.167t30.167 12.5h42.667zM725.333 853.333v-512h-426.667v512h426.667zM853.333 341.333h-42.667v512h42.667q17.667 0 30.167-12.5t12.5-30.167v-426.667q0-17.667-12.5-30.167t-30.167-12.5zM597.333 170.667h-170.667q-17.667 0-30.167 12.5t-12.5 30.167v42.667h256v-42.667q0-17.667-12.5-30.167t-30.167-12.5z"></path>
+                        </symbol>
+                        <use xlink:href="#icon-briefcase"></use>
+                    </svg>
+                    <div class="title">For the Professional</div>
+                    <div class="description">Use Meego in shared work spaces. Keep your valuable data and equipment safe when you go for a quick lunch or coffee trip.</div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="section section-2">
+            <div class="section-wrap">
+                <div class="section-title fadein">Features</div>
+                <div class="feature feature-1">
+                    <div class="feature-img fadein"></div>
+                    <div class="feature-title feature-smaller feature-left fadein">
+                        <div class="feature-text-center">Motion-Activated Alarm</div>
+                    </div>
+                    <div class="feature-text feature-smaller feature-right fadein">
+                        <div class="feature-text-center">Meego's alarm is motion activated, so that any thief is quickly deterred as the sound attracts public attention at the same time.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature feature-2" id="feature-swap">
+                    <div class="feature-img fadein" id="feature-img-swap"></div>
+                    <div class="feature-text feature-smaller feature-left fadein" id="feature-text-swap-1">
+                        <div class="feature-text-center">Meego pairs with your smartphone and alerts you right away.</div>
+                    </div>
+                    <div class="feature-title feature-smaller feature-right fadein" id="feature-text-swap-2">
+                        <div class="feature-text-center">Smartphone Bluetooth Pairing</div>
+                    </div>
+
+                </div>
+
+                <div class="feature feature-3">
+                    <div class="feature-img fadein"></div>
+                    <div class="feature-title feature-smaller feature-left fadein">
+                        <div class="feature-text-center">GPS Tracking</div>
+                    </div>
+                    <div class="feature-text feature-smaller feature-right fadein">
+                        <div class="feature-text-center">It's GPS enabled, so you always know where to find Meego.</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="section section-3">
+            <div class="section-wrap">
+                <div class="section-title">Help Fund Us!<img id="kickstarter" src="assets/kickstarter2.png" alt="kickstarter"></div>
+
+                <div class="kickstarter-temp">We haven't launched yet, but click the button below to sign up to be on the email list and be the first to know when Meego is ready!</div>
+
+                <div class="nav-button sign-up-button" id="temp-signup">SIGN UP</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="media">
+                <div class="media-icon h-link">
+                    <a class="hidden-link" href="https://www.facebook.com/MeegoTech" target="_blank"></a>
+                    <svg class="icon icon-social-facebook">
+                        <symbol id="icon-social-facebook" viewBox="0 0 1024 1024">
+                            <title>social-facebook</title>
+                            <path class="path1" d="M554.667 426.667h128v128h-128v298.667h-128v-298.667h-128v-128h128v-53.547c0-50.731 15.957-114.816 47.701-149.845 31.744-35.115 71.381-52.608 118.869-52.608h89.429v128h-89.6c-21.248 0-38.4 17.152-38.4 38.357v89.643z"></path>
+                        </symbol>
+                        <use xlink:href="#icon-social-facebook"></use>
+                    </svg>
+                </div>
+                <div class="media-icon h-link">
+                    <a class="hidden-link" href="https://twitter.com/MeegoTech" target="_blank"></a>
+                    <svg class="icon icon-social-twitter">
+                        <symbol id="icon-social-twitter" viewBox="0 0 1024 1024">
+                            <title>social-twitter</title>
+                            <path class="path1" d="M805.973 299.179c34.475-21.163 57.301-50.048 68.48-86.784-33.536 17.792-66.944 29.995-100.309 36.736-29.995-32.256-67.968-48.64-113.493-48.64-44.501 0-82.091 15.616-112.768 45.995-30.507 30.592-45.909 67.755-45.909 111.147 0 13.184 1.664 24.96 4.992 34.944-131.243-4.48-239.872-58.923-325.461-163.712-14.507 25.643-21.76 51.755-21.76 78.763 0 55.509 23.424 99.499 70.187 131.797-26.667-2.261-50.176-9.003-70.187-20.053 0 39.637 11.648 72.747 34.987 101.888 23.424 28.843 53.504 47.232 90.24 55.083-13.312 3.413-27.349 5.035-41.771 5.035-13.312 0-22.741-1.109-28.331-3.541 9.813 32.299 28.331 58.496 55.083 78.549 26.667 20.139 57.344 30.763 91.819 31.701-56.832 44.587-121.813 66.645-195.328 66.645-18.005 0-30.763-0.256-38.485-1.621 72.405 47.019 153.003 70.357 242.176 70.357 91.264 0 171.904-23.125 242.091-69.376 70.187-45.995 121.984-102.741 155.264-169.557 33.451-66.731 50.005-136.192 50.005-208.725v-19.968c32.341-24.32 58.496-51.712 78.507-81.963-29.013 12.501-59.008 20.992-90.027 25.301z"></path>
+                        </symbol>
+                        <use xlink:href="#icon-social-twitter"></use>
+                    </svg>
+                </div>
+                <div class="media-icon h-link">
+                    <a class="hidden-link" href="mailto:meegotech@gmail.com"></a>
+                    <svg class="icon icon-envelope">
+                        <symbol id="icon-envelope" viewBox="0 0 1024 1024">
+                            <title>envelope</title>
+                            <path class="path1" d="M1024 405.714v453.714q0 37.714-26.857 64.571t-64.571 26.857h-841.143q-37.714 0-64.571-26.857t-26.857-64.571v-453.714q25.143 28 57.714 49.714 206.857 140.571 284 197.143 32.571 24 52.857 37.429t54 27.429 62.857 14h1.143q29.143 0 62.857-14t54-27.429 52.857-37.429q97.143-70.286 284.571-197.143 32.571-22.286 57.143-49.714zM1024 237.714q0 45.143-28 86.286t-69.714 70.286q-214.857 149.143-267.429 185.714-5.714 4-24.286 17.429t-30.857 21.714-29.714 18.571-32.857 15.429-28.571 5.143h-1.143q-13.143 0-28.571-5.143t-32.857-15.429-29.714-18.571-30.857-21.714-24.286-17.429q-52-36.571-149.714-104.286t-117.143-81.429q-35.429-24-66.857-66t-31.429-78q0-44.571 23.714-74.286t67.714-29.714h841.143q37.143 0 64.286 26.857t27.143 64.571z"></path>
+                        </symbol>
+                        <use xlink:href="#icon-envelope"></use>
+                    </svg>
+                </div>
+            </div>
+            &copy; 2015 Meego Technology
+            <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-62537557-1', 'auto');
+          ga('send', 'pageview');
+
+          </script>
+      </div>
+
+  </body>
+
+  </html>
